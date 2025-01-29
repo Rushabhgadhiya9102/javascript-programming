@@ -28,3 +28,12 @@ btn3.addEventListener("click", () => {
 
   paraGraph.innerHTML = msg;
 });
+
+// ---------- DARK MODE ------------
+
+// let darkmode = document.querySelector('.darkmode');
+const btn4 = document.querySelector('.btn4');
+
+btn4.addEventListener("click", () =>{
+  document.body.classList.toggle('darkmode');
+});
