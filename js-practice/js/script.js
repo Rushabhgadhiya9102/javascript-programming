@@ -31,9 +31,28 @@ btn3.addEventListener("click", () => {
 
 // ---------- DARK MODE ------------
 
-// let darkmode = document.querySelector('.darkmode');
 const btn4 = document.querySelector('.btn4');
 
 btn4.addEventListener("click", () =>{
   document.body.classList.toggle('darkmode');
 });
+
+
+// --------- COUNTER ----------
+
+const btn5 = document.querySelector('.btn5');
+const btn6 = document.querySelector('.btn6');
+const counter = document.querySelector('.counter');
+let increase = 0;
+
+btn5.addEventListener("click", () => {
+  increase++;
+  counter.innerHTML = increase;
+})
+
+btn6.addEventListener("click", () => {
+  if(increase != 0){
+    increase--;
+  }
+  counter.innerHTML = increase;
+})
