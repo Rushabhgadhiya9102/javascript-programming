@@ -1,0 +1,11 @@
+// check if the number range is within 10 and 20 or not
+
+let number = 9;
+
+if(number >=10 && number<=20){
+    console.log("the number is " + number + " and its within the range of 10 and 20");
+    
+}else{
+    console.log("the number is " + number + " and its outside the range of 10 and 20");
+
+}

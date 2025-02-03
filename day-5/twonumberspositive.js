@@ -1,0 +1,12 @@
+// check if the two number both positive or not
+
+let a = 5;
+let b = -6;
+
+if (a > 0 && b > 0) {
+  console.log(a + " and " + b + " both are positive");
+} else if (a > 0 && b < 0) {
+  console.log(a + " is positive but " + b + " is negative");
+} else {
+  console.log(a + " is negative but " + b + " is positive");
+}

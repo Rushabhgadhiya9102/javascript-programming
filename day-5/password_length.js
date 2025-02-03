@@ -1,0 +1,11 @@
+// check the lenght of the password
+
+let password = "Rushabh1234";
+
+if(password.length >= 8){
+    console.log("password is acceptable");
+    
+}else{
+    console.log("password is not acceptable");
+    
+}
