@@ -1,0 +1,24 @@
+// day and week 
+
+let daynumber = 5;
+let dayname;
+
+if(daynumber == 1){
+    dayname = "monday";
+}else if(daynumber == 2){
+    dayname = "tuesday";
+}else if(daynumber == 3){
+    dayname = "wednesday";
+}else if(daynumber == 4){
+    dayname = "thurday";
+}else if(daynumber == 5){
+    dayname = "friday";
+}else if(daynumber == 6){
+    dayname = "saturday";
+}else if(daynumber == 7){
+    dayname = "sunday";
+}else{
+    dayname = "invalid day";
+}
+
+console.log("day " + daynumber + " is " + dayname + " ");

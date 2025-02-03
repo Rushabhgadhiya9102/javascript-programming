@@ -1,0 +1,7 @@
+// check the  number is positive or not
+
+let num1 = 5;
+
+if(num1 > 0){
+    console.log('the number is positive');
+}

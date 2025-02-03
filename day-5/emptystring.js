@@ -1,0 +1,9 @@
+// empty string 
+
+let inputText = "";
+
+if(inputText === ""){
+    console.log("the string is empty");
+}else {
+    console.log("the string is not empty");
+}
