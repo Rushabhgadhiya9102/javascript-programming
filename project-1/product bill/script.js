@@ -1,6 +1,6 @@
 // DECLARE THE VARIABLE
 
-let product = "Heliken"
+let product = "la pinoz pizza"
 let price = 700;
 let qty = prompt("Enter the Quantity");
 let total = price * qty;
