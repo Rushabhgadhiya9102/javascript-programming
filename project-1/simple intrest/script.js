@@ -13,6 +13,7 @@ rateOfIntrest = principleAmount >= 500000 ? 12/100 :
                 principleAmount >= 250000 ? 8/100 : 3/100;
 
 
+// TO PRINT PERFECT MESSAGE PURPOSE
 rate = principleAmount >= 500000 ? "12%" :
        principleAmount >= 350000 ? "9%" : 
        principleAmount >= 250000 ? "8%" : "3%";
