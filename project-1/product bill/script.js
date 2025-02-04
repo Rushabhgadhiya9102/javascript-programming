@@ -1,12 +1,7 @@
 // DECLARE THE VARIABLE
 
-<<<<<<< HEAD
 let product = "La-pinoz-pizza"
 let price = 450;
-=======
-let product = "la pinoz pizza"
-let price = 700;
->>>>>>> 0fdbe949ca3b700d2dcba4ecec3ed221c529bde1
 let qty = prompt("Enter the Quantity");
 let total = price * qty;
 let discount;
