@@ -1,6 +1,6 @@
 // DECLARE THE VARIABLE
 
-let employeeName = "Dhaval lilawala"
+let employeeName = "Dhaval leelawala"
 let employeeSalary = prompt("enter the salary");
 let experience = prompt("enter the experience");
 let role = "Faculty"
