@@ -1,0 +1,28 @@
+// determine area based on shape type
+
+// circle
+let shape = "circle",
+    area = 0,
+    radius = 5;
+
+// rectangle
+let length = 10,
+    width = 4;
+
+const pi = 3.14;
+
+if(shape === "circle"){
+
+    area  = pi*radius*radius;
+    console.log("area of circle:",area);
+
+}else if (shape === "rectangle"){
+
+    area = lenght*width;
+    console.log("area of rectangle:",area);
+
+}else{
+
+    console.log("shape is not recognized");
+
+}
