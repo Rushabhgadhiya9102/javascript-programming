@@ -59,6 +59,7 @@ formLogin.addEventListener("submit", function(event) {
 // --------- F U N C T I O N - C R E A T E --------
 function formHide() {
     signUP.style.display = "none";
+    btnGroup.style.display = "none";
     login.style.display = "block";
 }
 
