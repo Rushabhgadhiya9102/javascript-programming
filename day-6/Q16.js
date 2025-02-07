@@ -9,6 +9,7 @@ while(num != 0){
         maxDigit = digit;
         num = Math.floor(num/10);
     }
-
+    num--;
 }
 console.log("Largest Digit : ", maxDigit);
+
