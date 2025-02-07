@@ -3,8 +3,6 @@
 let signUP = document.querySelector(".sign-up");
 let login = document.querySelector(".login");
 let userCard = document.getElementById("userCard");
-let signUPBtn = document.getElementById("sign-up-btn");
-let loginBtn = document.getElementById("login-btn");
 let formSignUp = document.getElementById("sign-up");
 let formLogin = document.getElementById("login");
 let btnGroup = document.querySelector(".btn-section");
@@ -59,13 +57,11 @@ formLogin.addEventListener("submit", function(event) {
 // --------- F U N C T I O N - C R E A T E --------
 function formHide() {
     signUP.style.display = "none";
-    btnGroup.style.display = "none";
     login.style.display = "block";
 }
 
 function displayCard() {
     userCard.style.display = "block";
-    btnGroup.style.display = "none";
     login.style.display = "none";
     displayemail.textContent = user_email;
     userName.textContent = user_name;
@@ -73,18 +69,3 @@ function displayCard() {
 }
 
 // --------- F U N C T I O N - C R E A T E - E N D -------
-
-// --------- E V E N T - L I S T E N E R --------
-
-signUPBtn.addEventListener("click", () => {
-    signUP.style.display = "block";
-    login.style.display = "none";
-})
-
-loginBtn.addEventListener("click", () => {
-    
-    signUP.style.display = "none";
-    login.style.display = "block";
-})
-
-// --------- E V E N T - L I S T E N E R - E N D -------
