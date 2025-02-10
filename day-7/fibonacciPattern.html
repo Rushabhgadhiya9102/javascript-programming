@@ -8,9 +8,10 @@
   // FIBONACCI PATTERN SERIES
   let a = 0,
     b = 1,
+    num = 5,
     temp;
 
-  for (let i = 0; i <= 5; i++) {
+  for (let i = 0; i <= num; i++) {
     for (let j = 1; j <= i; j++) {
 
       if (i === 0) {
@@ -21,7 +22,7 @@
 
         document.write(b);
 
-      } else if (i > 1 && i <= 5) {
+      } else if (i > 1 && i <= num) {
 
         temp = a + b;
         document.write(temp + " ");
