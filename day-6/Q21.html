@@ -1,0 +1,25 @@
+<script>
+
+// CHECK IF THE NUMBER IS PALINDROME OR NOT    
+
+let originalNumber = 10001;
+let reverseNumber  = 0;
+let digit, storedNum = originalNumber;
+
+while(originalNumber != 0){
+
+    digit = originalNumber % 10;
+    reverseNumber = reverseNumber * 10 + digit;
+    originalNumber = Math.floor(originalNumber / 10);
+
+}
+
+if(reverseNumber === storedNum){
+    console.log(reverseNumber + " is palindrome");
+    
+}else{
+    console.log(reverseNumber + " is not palindrome");
+    
+}
+
+</script>
