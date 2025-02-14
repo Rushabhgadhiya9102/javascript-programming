@@ -14,7 +14,7 @@ let num1 = "";
 let num2 = "";
 let operator = "";
 
-//  GREETING SECTION 
+// GREETING SECTION 
 // WHEN USER CLICK THE START BUTTON THE CALCULATOR IS SHOWN
 
 mainCalculator.style.display = "none";
