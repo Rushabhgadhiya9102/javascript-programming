@@ -20,8 +20,10 @@ let operator = "";
 mainCalculator.style.display = "none";
 
 startBtn.addEventListener("click", () => {
+
     mainCalculator.style.display = "block";
     greeting.style.display = "none";
+
 })
 
 // IN FIRST STEP USING FOR EACH LOOP TO ENSURE THAT EACH BUTTON CLICK
@@ -29,6 +31,7 @@ startBtn.addEventListener("click", () => {
 
 numberBtn.forEach(button => {
     button.addEventListener("click", () => {
+
         if(operator === ""){
             num1 += button.value;
             display.value = num1;
@@ -36,6 +39,7 @@ numberBtn.forEach(button => {
             num2 += button.value;
             display.value = num1 +" " + operator+ " " + num2;
         }
+
     })
 })
 
@@ -44,10 +48,12 @@ numberBtn.forEach(button => {
 
 operatorBtn.forEach(button => {
     button.addEventListener("click", () => {
+
         if(num1 !== ""){
             operator = button.value;
             display.value = num1 + " " + operator;
         }
+
     })
 })
 
@@ -55,10 +61,12 @@ operatorBtn.forEach(button => {
 // WHEN CLICK ON THE BUTTON ALL THE VARIABLE WILL BECOME EMPTY
 
 clearBtn.addEventListener("click", () => {
+
     num1 = "";
     num2 = "";
     operator = "";
     display.value = "";
+
 })
 
 // IN THE FINAL STEP CREATE A EQUAL BUTTON FOR THE CALCULATION OUTPUT 
@@ -68,18 +76,23 @@ equalBtn.addEventListener("click", () => {
     if(num1 !== "" && num2 !== ""){
         let result = 0;
         switch (operator){
+
             case '+':
                 result = parseInt(num1) + parseInt(num2);
               break;  
+
             case '-':
                 result = parseInt(num1) - parseInt(num2);
-              break;  
+              break; 
+
             case '*':
                 result = parseInt(num1) * parseInt(num2);
               break;  
+
             case '/':
                 result = parseInt(num1) / parseInt(num2);
               break;
+              
             default:
                 break;    
         }
