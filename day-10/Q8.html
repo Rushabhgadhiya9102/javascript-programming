@@ -1,0 +1,15 @@
+<script>
+
+// A FUNCTION PASSED AS AN ARGUMENT TO ANOTHER FUNCTION
+
+function userInput(callback){
+
+    let name = "rushabh"
+    callback(name);
+}
+
+userInput(function(name){
+    console.log("hello " + name );
+})
+
+</script>
