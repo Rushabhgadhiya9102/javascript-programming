@@ -1,4 +1,4 @@
-// VARIABLE DECLARATION
+// ---------- V A R I A B L E - D E C L A R A T I O N -----------
 
 const greeting = document.getElementById("greeting-section");
 const mainCalculator = document.getElementById("calculator-item");
@@ -14,8 +14,7 @@ let num1 = "";
 let num2 = "";
 let operator = "";
 
-// GREETING SECTION 
-// WHEN USER CLICK THE START BUTTON THE CALCULATOR IS SHOWN
+// ------------ G R E E T I N G - S E C T I O N ------------
 
 mainCalculator.style.display = "none";
 
@@ -26,8 +25,9 @@ startBtn.addEventListener("click", () => {
 
 })
 
-// IN FIRST STEP USING FOR EACH LOOP TO ENSURE THAT EACH BUTTON CLICK
-// FUTHERMORE, CHECK THE CONDITION IF OPERATOR IS EMPTY THEN EXCUTE NUM1 OR ELSE NUM2 AND DISPLAY THE VALUE
+// ------------ G R E E T I N G - S E C T I O N ------------
+
+// --------- N U M B E R - B U T T O N S -----------
 
 numberBtn.forEach(button => {
     button.addEventListener("click", () => {
@@ -42,9 +42,9 @@ numberBtn.forEach(button => {
 
     })
 })
+// --------- N U M B E R - B U T T O N S -----------
 
-// IN THE SECOND STEP AGAIN USING FOR EACH LOOP TO ENSURE THAT THE BUTTON IS CLICK
-// MOREOVER, CHECK THE CONDITION IF NUM1 IS NOT EMPTY THEN THE OPERATOR VARIABLE WILL RUN AND DISPLAY THE VALUE
+// --------- O P E R A T O R - B U T T O N S -----------
 
 operatorBtn.forEach(button => {
     button.addEventListener("click", () => {
@@ -57,8 +57,9 @@ operatorBtn.forEach(button => {
     })
 })
 
-// IN THE THIRD STEP CREATE A CLEAR BUTTON TO CLEAR ALL THE OUTPUT OR VALUE IN DISPLAY 
-// WHEN CLICK ON THE BUTTON ALL THE VARIABLE WILL BECOME EMPTY
+// --------- O P E R A T O R - B U T T O N S -----------
+
+// --------- C L E A R - B U T T O N S -----------
 
 clearBtn.addEventListener("click", () => {
 
@@ -69,8 +70,9 @@ clearBtn.addEventListener("click", () => {
 
 })
 
-// IN THE FINAL STEP CREATE A EQUAL BUTTON FOR THE CALCULATION OUTPUT 
-// ON CLICK CHECK THE CONDITION IF NUM1 AND NUM2 IS NOT EMPTY THEN THE CONDITION IS TRUE OR ELSE CONDITION IS FALSE
+// --------- C L E A R - B U T T O N S -----------
+
+// --------- E Q U A L - B U T T O N S -----------
 
 equalBtn.addEventListener("click", () => {
     if(num1 !== "" && num2 !== ""){
@@ -102,3 +104,5 @@ equalBtn.addEventListener("click", () => {
         display.value = "invalid calculation";
     }
 })
+
+// --------- E Q U A L - B U T T O N S -----------
