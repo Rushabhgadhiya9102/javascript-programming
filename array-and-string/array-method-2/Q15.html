@@ -1,0 +1,20 @@
+<script>
+
+// advanced level
+// transform array of object using map function
+
+const students = [
+    {
+        name : "jane" , marks : 55
+    },
+
+    {
+        name : "john", marks : 80
+    }
+];
+
+const update = students.map(student => ({... student, pass : student.marks > 60}))
+console.log(update);
+
+
+</script>

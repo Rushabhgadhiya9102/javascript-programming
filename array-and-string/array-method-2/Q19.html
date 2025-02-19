@@ -1,0 +1,18 @@
+<script>
+
+// advanced level
+// check if at least one element matches condition using some function
+
+const orders = [
+    {
+        orderId : 101, status: "shipped"
+    },
+    {
+        orderId : 102, status: "pending"
+    }
+];
+
+console.log(orders.some(order => order.status === "pending"));
+
+
+</script>

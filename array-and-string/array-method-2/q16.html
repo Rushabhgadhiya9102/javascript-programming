@@ -1,0 +1,11 @@
+<script>
+
+// advanced program 
+// filter unique values using filter and indexOf function
+
+const arr = [1,2,3,2,4,2,5];
+const unique = arr.filter((value, index, self) => self.indexOf(value) === index);
+
+console.log(unique);
+
+</script>
