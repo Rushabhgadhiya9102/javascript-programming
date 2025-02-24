@@ -1,0 +1,26 @@
+<script>
+// intermediate level
+// using map function add new property to each objects
+
+const students = [
+               {
+                Name : "Rushabh", 
+                age : 22
+               }, 
+
+               {
+                Name : "Rohan" ,
+                age : 20
+               },
+
+               {
+                Name : "Rudra", 
+                age : 20
+               }
+            ];
+
+const updateStudents = students.map(student => ({...student, grade : "A"}));
+console.log(updateStudents);
+
+
+</script>
