@@ -1,0 +1,35 @@
+<script>
+
+// fliter object where age is greater than 18
+
+let people = [
+    {
+        name: "Rushabh",
+        age: 22
+    },
+
+    {
+        name: "Rudra",
+        age: 20
+    },
+
+    {
+        name: "Rohan",
+        age: 21
+    },
+
+    {
+        name: "Kavya",
+        age: 18
+    }
+    
+]
+
+let res = people.filter((person) => {
+    return person.age > 18;
+})
+
+console.log(res);
+
+
+</script>
