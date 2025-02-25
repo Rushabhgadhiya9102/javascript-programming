@@ -1,14 +1,22 @@
 <script>
+  // fliter prime number
 
-// fliter prime number
+  let num = [2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let num = [2,3,4,5,6,7,8,9,10];
-let primeNum = (num) => {
-    for(let i = 2; i < num; i++){
-        if(num % i === 0)
+  let primeNum = (num) => {
+
+    for (let i = 2; i < num; i++) {
+
+      if (num % i === 0) {
         return false;
+      }
+
     }
     return num > 1;
-}
 
+  };
+
+  let res = num.filter(primeNum);
+  console.log(res);
+  
 </script>

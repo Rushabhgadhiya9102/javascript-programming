@@ -1,0 +1,39 @@
+<script>
+
+// group item by category
+
+let product = [
+
+    {
+        name: "laptop",
+        category: "electronics"
+    },
+
+    {
+        name: "shirt",
+        category: "clothing"
+    },
+
+    {
+        name: "phone",
+        category: "electronics"
+    },
+
+    {
+        name: "jeans",
+        category: "clothing"
+    }
+
+];
+
+let grouped = product.reduce((acc, val) => {
+
+    (acc[val.category] = acc[val.category] || []). push(val.name);
+    return acc;
+
+}, {})
+
+console.log(grouped);
+
+
+</script>

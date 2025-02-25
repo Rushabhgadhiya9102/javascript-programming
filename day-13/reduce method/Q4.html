@@ -1,0 +1,19 @@
+<script>
+
+// flatten a nested array
+
+let array = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+];
+
+let res = array.reduce((acc, val) => {
+
+   return acc.concat(val);
+
+}, []);
+
+console.log(res);
+
+</script>
