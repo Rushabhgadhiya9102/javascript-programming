@@ -8,21 +8,29 @@
   </head>
   <body>
     <main>
+
+      <!------------- C A R O U S E L - S L I D E R -------------->
+
       <section class="slider">
-        <div class="slider-item d-none active">
+        <div class="slider-item fade d-none active">
           <img src="./images/img-1.jpg" alt="" />
         </div>
-        <div class="slider-item d-none">
+
+        <div class="slider-item fade d-none">
           <img src="./images/img-2.jpg" alt="" />
         </div>
-        <div class="slider-item d-none">
+        
+        <div class="slider-item fade d-none">
           <img src="./images/img-3.jpeg" alt="" />
         </div>
       </section>
-      <section>
-        <button class="prev" onclick="changeSlide(-1)">prev</button>
-        <button class="next" onclick="changeSlide(1)">next</button>
+
+      <section class="navigation-button">
+        <button class="prev" >prev</button>
+        <button class="next" >next</button>
       </section>
+
+      <!------------- C A R O U S E L - S L I D E R -------------->
     </main>
 
     <script src="./script.js"></script>
