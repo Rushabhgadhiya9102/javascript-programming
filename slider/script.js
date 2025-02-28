@@ -55,3 +55,11 @@ nextBtn.addEventListener("click", () => {
 });
 
 // ----------------- N A V I G A T I O N - B U T T O N ------------------
+
+// ----------------- A U T O - C H A N G I N G --------------------------
+
+let autoChange = setInterval(() => {
+    slideChanger(1);
+}, 5000)
+
+// ----------------- A U T O - C H A N G I N G --------------------------
