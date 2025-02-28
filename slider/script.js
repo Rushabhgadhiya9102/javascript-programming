@@ -10,7 +10,7 @@ let currentSlide = 0;
 
 // ------------------- F U N C T I O N - S H O W - S L I D E S ----------------
 
-function showSlides(index){
+function slidesShow(index){
 
     if(index >= slides.length){
         currentSlide = 0;
@@ -38,8 +38,8 @@ function showSlides(index){
 
 // ------------------- F U N C T I O N - C H A N G E - S L I D E S --------------
 
-function changeSlide(n){
-    showSlides(currentSlide + n);
+function slideChanger(n){
+    slidesShow((currentSlide += n));
 }
 
 // ------------------- F U N C T I O N - C H A N G E - S L I D E S --------------
@@ -47,11 +47,11 @@ function changeSlide(n){
 // ----------------- N A V I G A T I O N - B U T T O N ------------------
 
 prevBtn.addEventListener("click", () => {
-    changeSlide(-1);
+    slideChanger(-1);
 });
 
 nextBtn.addEventListener("click", () => {
-    changeSlide(1);
+    slideChanger(1);
 });
 
 // ----------------- N A V I G A T I O N - B U T T O N ------------------
