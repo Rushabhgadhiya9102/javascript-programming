@@ -4,32 +4,6 @@
     box-sizing: border-box;
 }
 
-/* ------------- N A V B A R ----------------- */
-
-.navbar{
-    /* background-color: rgba(0, 0, 0, 0.781); */
-    /* backdrop-filter: blur(20px); */
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-}
-
-.navbar ul{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 20px 0px;
-}
-
-.navbar ul a{
-    text-decoration: none;
-    color: white;
-    font-weight: 100;
-}
-
-/* ------------- N A V B A R ----------------- */
-
 /* ------------- S L I D E R ---------------- */
 
 .slider{
@@ -53,8 +27,14 @@
     transform: translateY(-50%);
 }
 
-.slider-content{
+.content-background{
     background-image: linear-gradient(to right, black,50%, transparent);
+    position: absolute;
+    width: 100%;
+    padding-top: 50%;
+    height: 0%;
+    top: 0%;
+    z-index: 1;
 }
 
 .slider-content h2{
@@ -93,6 +73,8 @@
     position: absolute;
     padding: 10px 15px;
     top: 50%;
+    color: white;
+    z-index: 2;
     transform: translateY(-50%);
 }
 
