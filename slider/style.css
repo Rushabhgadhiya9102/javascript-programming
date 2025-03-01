@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+/* ------------- N A V B A R ----------------- */
+
 .navbar{
-    background-color: rgba(0, 0, 0, 0.781);
-    backdrop-filter: blur(10px);
+    /* background-color: rgba(0, 0, 0, 0.781); */
+    /* backdrop-filter: blur(20px); */
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -26,11 +28,15 @@
     font-weight: 100;
 }
 
+/* ------------- N A V B A R ----------------- */
+
+/* ------------- S L I D E R ---------------- */
+
 .slider{
     width: 100%;
     height: 100vh;
-    /* margin: auto; */
     display: flex;
+    position: relative;
     overflow: hidden;
 }
 
@@ -40,12 +46,78 @@
     object-fit: cover;
 }
 
+.slider-content{
+    position: absolute;
+    top: 50%;
+    padding: 0px 0px 0px 100px;
+    transform: translateY(-50%);
+}
+
+.slider-content{
+    background-image: linear-gradient(to right, black,50%, transparent);
+}
+
+.slider-content h2{
+    color: goldenrod;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.slider-content p{
+    color: white;
+    font-size: 25px;
+    width: 40%;
+}
+
+.slider-content button {
+    margin: 15px 0px;
+    padding: 10px 15px;
+    color: white;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.slider-content button:hover {
+    background-color: goldenrod;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+/* ------------- S L I D E R ---------------- */
+
+/* ------------- N A V I G A T I O N - B U T T O N S ---------------- */
+
 .prev, .next{
     position: absolute;
     padding: 10px 15px;
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* ------------- N A V I G A T I O N - B U T T O N S ---------------- */
+
+/* ------------- A N I M A T I O N S --------------- */
+
+.top-down{
+    animation-name: top-down;
+    animation-duration: 2s;
+}
+
+@keyframes top-down {
+    
+    from{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+
+}
+
 
 .fade{
     animation-name: fade;
@@ -62,6 +134,8 @@
     }
 
 }
+
+/* ------------- A N I M A T I O N S --------------- */
 
 .navigation-button i{
     font-size: 50px;
