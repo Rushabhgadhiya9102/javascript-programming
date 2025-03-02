@@ -2,9 +2,11 @@
 
 let slidecontainer = document.querySelector(".slider");
 let slides = document.querySelectorAll(".slider-item ");
+let indicator = document.querySelectorAll(".indicator");
 let prevBtn = document.querySelector(".prev");
 let nextBtn = document.querySelector(".next");
 let currentSlide = 0;
+
 
 // ------------------- V A R I A B L E - D E C L A R A T I O N ----------------
 
@@ -24,12 +26,17 @@ function slidesShow(index){
     }
 
      slides.forEach((slide, index) => {
-
        slide.classList.remove("active");
        if (index === currentSlide) {
-         slide.classList.add("active");    
+         slide.classList.add("active");   
        }
+     });
 
+     indicator.forEach((btn, index) => { 
+      btn.style.background = "white"; 
+       if (index === currentSlide) {
+          btn.style.background = "goldenrod"; 
+       }
      });
 
 }

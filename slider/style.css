@@ -80,6 +80,28 @@
 
 /* ------------- N A V I G A T I O N - B U T T O N S ---------------- */
 
+/* INDICATORS */
+
+.slider-indicator{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.indicator{
+    border: 1px solid #000;
+    width: 30px;
+    height: 10px;
+    border-radius: 20px;
+}
+
+/* INDICATORS */
+
 /* ------------- A N I M A T I O N S --------------- */
 
 .top-down{
