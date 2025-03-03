@@ -26,17 +26,21 @@ function slidesShow(index){
     }
 
      slides.forEach((slide, index) => {
+        
        slide.classList.remove("active");
        if (index === currentSlide) {
          slide.classList.add("active");   
        }
+
      });
 
      indicator.forEach((btn, index) => { 
-      btn.style.background = "white"; 
+        
+     btn.classList.remove("active2");
        if (index === currentSlide) {
-          btn.style.background = "goldenrod"; 
+         btn.classList.add("active2");
        }
+
      });
 
 }
