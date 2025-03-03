@@ -74,3 +74,12 @@ let autoChange = setInterval(() => {
 }, 5000)
 
 // ----------------- A U T O - C H A N G I N G --------------------------
+
+// ------------- I N D I C A T O R - B U T T O N -----------------
+
+indicator.forEach((btn, index) => {
+
+    btn.addEventListener("click", () => {
+        slidesShow(index);
+    })
+})
