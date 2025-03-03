@@ -1,0 +1,18 @@
+<script>
+
+// 2. Handling Multiple Exceptions
+
+try {
+    let num = parseInt("ABC");
+    if(isNaN(num)){
+        throw new Error("invalid number format");
+
+    }
+}
+catch(error) {
+
+    console.error("Error : " + error.message);
+    
+}
+
+</script>

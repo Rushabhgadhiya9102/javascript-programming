@@ -1,0 +1,19 @@
+<script>
+
+// 5. Try-Catch Inside a Function
+
+function risk(){
+
+    try{
+
+        throw new Error("something went wrong");
+
+    }catch(error) {
+        console.error("Caught an error in function : " + error.message);
+        
+    }
+}
+
+risk();
+
+</script>
