@@ -15,6 +15,7 @@ button.forEach((btn) => {
         let value = e.target.innerText;
 
         // PRINT ANSWER OF CALCULATION
+        
         if(value === '='){
             display.value = eval(display.value);
 
