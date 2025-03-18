@@ -8,13 +8,13 @@ class Animal {
 
 class Dog extends Animal {
 
-    constructor(){
+  constructor(){
+      super()
         console.log("dog is barking");
         
     }
 
 }
 
-const animal = new Animal()
-const dog = new Dog()
 
+const dog = new Dog()
