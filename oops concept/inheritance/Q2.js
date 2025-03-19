@@ -1,3 +1,5 @@
+// CALL PARENT CLASS CONSTRUCTOR THROUGH CHILD CLASS
+
 class Animal {
 
     constructor(){

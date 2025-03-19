@@ -1,23 +1,25 @@
-class Animal {
+// EXAMPLE 2
+
+class Person {
 
     constructor(name){
         this.name = name
     }
 
     info(){
-        console.log(`${this.name} is making noise`);
+        console.log(`${this.name} coding`);
     }
 
 }
 
-class Dog extends Animal{
+class Employee extends Person{
 
     info(){
-        console.log(`${this.name} is barking`);
+        console.log(`${this.name} Create his portfolio`);
     }
 
 }
 
-const dog = new Dog("Jerry")
+const dog = new Employee("Rushabh")
 
 dog.info()

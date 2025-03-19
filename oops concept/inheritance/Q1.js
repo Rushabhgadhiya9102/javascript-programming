@@ -1,3 +1,5 @@
+// EXAMPLE 1
+
 class Animal{
 
     constructor(name){
@@ -20,5 +22,5 @@ class Dog extends Animal {
 
 }
 
-const dog = new Dog("rex");
+const dog = new Dog("Jerry");
 dog.speak();
