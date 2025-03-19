@@ -22,9 +22,9 @@ class Students{
 }
 
 let student1 = new Students(7348, "Rushabh", "C language", "96%");
-let student2 = new Students(7348, "Rudra", "Html/Css", "86%");
-let student3 = new Students(7348, "Rohan", "Bootstrap", "80%");
-let student4 = new Students(7348, "Milan", "Integrated personality development course", "85%");
+let student2 = new Students(7962, "Rudra", "Html/Css", "86%");
+let student3 = new Students(7900, "Rohan", "Bootstrap", "80%");
+let student4 = new Students(7495, "Milan", "Integrated personality development course", "85%");
 
 
 student1.details()
