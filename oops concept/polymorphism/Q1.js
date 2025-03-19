@@ -1,4 +1,4 @@
-<script>
+
 
 // IOT - DEVICES POLYMORPHISM
 
@@ -46,5 +46,3 @@ myCommand.forEach(role => {
    role.command()
     
 });
-
-</script>

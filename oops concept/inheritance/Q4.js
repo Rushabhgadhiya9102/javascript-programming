@@ -1,4 +1,5 @@
 // EXAMPLE 2
+// METHOD OVERRIDING 
 
 class Person {
 
@@ -12,7 +13,7 @@ class Person {
 
 }
 
-class Employee extends Person{
+class User extends Person{
 
     info(){
         console.log(`${this.name} Create his portfolio`);
@@ -20,6 +21,6 @@ class Employee extends Person{
 
 }
 
-const dog = new Employee("Rushabh")
+const user = new User("Rushabh")
 
-dog.info()
+user.info()

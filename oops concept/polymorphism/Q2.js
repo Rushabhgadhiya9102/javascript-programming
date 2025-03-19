@@ -1,4 +1,3 @@
-<script>
 
 class Antivirus{
 
@@ -33,4 +32,3 @@ my_devices.forEach(devices => {
     devices.security()
 })
 
-</script>

@@ -1,4 +1,5 @@
 // EXAMPLE 1
+// METHOD OVERIDING
 
 class Animal{
 
