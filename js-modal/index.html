@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>modal</title>
+</head>
+<body>
+    
+    <section class="trigger-btn m-5">
+        <button id="trigger" class="bg-sky-300 hover:bg-sky-400 text-white px-5 py-2">modal</button>
+    </section>
+
+   <section class="flex justify-center">
+
+     <div class="modal w-100 p-5 border m-5 hidden" id="myModal">
+        <div class="modal-header flex justify-between border-b-1">
+            <div class="modal-title">
+                modal header
+            </div>
+            <button class="btn-close" id="close">close</button>
+        </div>
+        <div class="modal-body mt-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, aliquam. Reprehenderit perferendis impedit voluptates adipisci ipsam, eum incidunt error voluptatum temporibus, consequuntur iure vel nobis non eius odit deleniti dolores!</p>
+        </div>
+    </div>
+
+   </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
