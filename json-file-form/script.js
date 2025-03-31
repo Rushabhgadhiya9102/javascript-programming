@@ -25,6 +25,7 @@ let showData = document.querySelector(".table tbody");
 let formBtn = document.getElementById("formBtn");
 let gender = document.querySelectorAll("input[name='gender']");
 let hobby = document.querySelectorAll("input[type='checkbox']");
+let city = document.getElementById("select");
 let editId = -1;
 let person = [];
 firstName.focus();
@@ -33,17 +34,16 @@ form.addEventListener("submit", (event)=>{
 
     event.preventDefault();
 
-   let genderval = ''
+    let genderval = "";
 
-    if(gender[0].checked){
-        genderval = gender[0].value
-    }
-    else{
-        genderval = gender[1].value
+    if (gender[0].checked) {
+      genderval = gender[0].value;
+
+    } else {
+      genderval = gender[1].value;
+
     }
 
-    console.log(genderval);
-    
     let hobbyvalue = []
 
     for(let i = 0; i < hobby.length; i++){
@@ -56,13 +56,24 @@ form.addEventListener("submit", (event)=>{
 
     }
 
+    let cityValue = [];
+
+    for (let i = 0; i < city.length; i++) {
+
+      if (city[i].selected) {
+        cityValue.push(city[i].value);
+
+      }
+    }    
+
     let info = {
 
         firstName: firstName.value,
         lastName: lastName.value,
         phoneNumber: phoneNumber.value,
         gender: genderval,
-        hobby: hobbyvalue
+        hobby: hobbyvalue,
+        city: cityValue
 
     };
 
@@ -77,7 +88,7 @@ form.addEventListener("submit", (event)=>{
 
     resetForm();
     display();
-    modal.classList.remove("d-block");
+    // modal.classList.remove("d-block");
 
 })
 
@@ -110,6 +121,7 @@ function display(){
             <td>${user.phoneNumber}</td>
             <td>${user.gender}</td>
             <td>${user.hobby}</td>
+            <td>${user.city}</td>
             <td>
                 <i id="deleteBtn" class="bi bi-trash3-fill fs-5 me-3" onclick="deleteRecord(${index})"></i>
                 <i id="editBtn" class="bi bi-pencil-fill fs-5" onclick="editRecords(${index})"></i>

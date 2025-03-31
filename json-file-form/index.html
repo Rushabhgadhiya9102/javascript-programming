@@ -19,7 +19,7 @@
           </a>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-success" type="submit" disabled>Search</button>
           </form>
         </div>
       </nav>
@@ -40,6 +40,9 @@
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Phone</th>
+                <th>Gender</th>
+                <th>Hobby</th>
+                <th>City</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -49,7 +52,7 @@
       </section>
 
       <section class="record-entries">
-        <div id="modal" class="modal d-block">
+        <div id="modal" class="modal">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -106,7 +109,7 @@
 
                   <div class="mb-3">
                     <label class="form-label">City:</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select id="select" class="form-select" aria-label="Default select example">
                       <option>city</option>
                       <option value="navsari">navsari</option>
                       <option value="surat">surat</option>
