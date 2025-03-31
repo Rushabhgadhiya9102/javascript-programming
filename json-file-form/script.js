@@ -23,6 +23,8 @@ let lastName = document.getElementById("lastname");
 let phoneNumber = document.getElementById("phone");
 let showData = document.querySelector(".table tbody");
 let formBtn = document.getElementById("formBtn");
+let gender = document.querySelectorAll("input[name='gender']");
+let hobby = document.querySelectorAll("input[type='checkbox']");
 let editId = -1;
 let person = [];
 firstName.focus();
@@ -31,11 +33,36 @@ form.addEventListener("submit", (event)=>{
 
     event.preventDefault();
 
+   let genderval = ''
+
+    if(gender[0].checked){
+        genderval = gender[0].value
+    }
+    else{
+        genderval = gender[1].value
+    }
+
+    console.log(genderval);
+    
+    let hobbyvalue = []
+
+    for(let i = 0; i < hobby.length; i++){
+
+        if(hobby[i].checked){
+
+            hobbyvalue.push(hobby[i].value)
+
+        }
+
+    }
+
     let info = {
 
         firstName: firstName.value,
         lastName: lastName.value,
-        phoneNumber: phoneNumber.value
+        phoneNumber: phoneNumber.value,
+        gender: genderval,
+        hobby: hobbyvalue
 
     };
 
@@ -81,6 +108,8 @@ function display(){
             <td>${user.firstName}</td>
             <td>${user.lastName}</td>
             <td>${user.phoneNumber}</td>
+            <td>${user.gender}</td>
+            <td>${user.hobby}</td>
             <td>
                 <i id="deleteBtn" class="bi bi-trash3-fill fs-5 me-3" onclick="deleteRecord(${index})"></i>
                 <i id="editBtn" class="bi bi-pencil-fill fs-5" onclick="editRecords(${index})"></i>
@@ -118,7 +147,5 @@ function editRecords(index){
     editId = index;
 
 }
-
-
 
 // ---------- D E L E T E - E D I T - B U T T O N S - E N D ------------
