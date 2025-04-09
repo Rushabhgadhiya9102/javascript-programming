@@ -28,6 +28,12 @@ let hobby = document.querySelectorAll("input[type='checkbox']");
 let city = document.getElementById("select");
 let editId = -1;
 let person = [];
+
+if(localStorage.getItem("personVal")){
+    person = JSON.parse(localStorage.getItem("personVal"))
+    display()
+}
+
 firstName.focus();
 
 form.addEventListener("submit", (event)=>{
@@ -86,9 +92,11 @@ form.addEventListener("submit", (event)=>{
         editId = -1;
     }
 
+    localStorage.setItem("personVal", JSON.stringify(person))
+
     resetForm();
     display();
-    // modal.classList.remove("d-block");
+    modal.classList.remove("d-block");
 
 })
 
@@ -141,6 +149,7 @@ display();
 
 function deleteRecord(index){
     person.splice(index,1);
+    localStorage.setItem("personVal", JSON.stringify(person));
     display();
 }
 
